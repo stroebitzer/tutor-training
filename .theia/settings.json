@@ -1,0 +1,8 @@
+{
+    "editor.minimap.enabled": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.training.yaml": true,
+        "**/.task.yaml": true
+    }
+}
