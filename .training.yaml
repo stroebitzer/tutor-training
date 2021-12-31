@@ -2,22 +2,22 @@ name: Kubernetes Fundametals
 topics:
   - id: intro
     name: Intro
-    slidesUrl: https://docs.google.com/presentation/d/1gxNSsHacD42O-zPciMwZYc9PFRjrjMUMUmr4y13WRyM/edit?usp=sharing
+    slidesUrl: https://docs.google.com/presentation/d/1gxNSsHacD42O-zPciMwZYc9PFRjrjMUMUmr4y13WRyM/embed
   - id: k8s-architecture
     name: Kubernetes Architecture
-    slidesUrl: https://docs.google.com/presentation/d/1a1ie8oazKuVjOpGjxDeA-1XFrEEuKU9ZwS5Gerlbv2g/edit?usp=sharing
+    slidesUrl: https://docs.google.com/presentation/d/1a1ie8oazKuVjOpGjxDeA-1XFrEEuKU9ZwS5Gerlbv2g/embed
     tasks:
       - name: Hello Kubernetes
         id: hello-k8s
   - id: pods
     name: Pods
-    slidesUrl: https://docs.google.com/presentation/d/1KXO3jr1zmHCbJOcg6R0N_XXAiLsmwe0D7fW7JJKZ2Rg/edit?usp=sharing
+    slidesUrl: https://docs.google.com/presentation/d/1KXO3jr1zmHCbJOcg6R0N_XXAiLsmwe0D7fW7JJKZ2Rg/embed
     tasks:
       - name: Pods
         id: pods
   - id: services
     name: Services
-    slidesUrl: https://docs.google.com/presentation/d/1UZia1JK_W22GV6hVd5uYuXGfytJJTbCsyHnsaVMj-kw/edit?usp=sharing
+    slidesUrl: https://docs.google.com/presentation/d/1UZia1JK_W22GV6hVd5uYuXGfytJJTbCsyHnsaVMj-kw/embed
     tasks:
       - name: Services
         id: services
