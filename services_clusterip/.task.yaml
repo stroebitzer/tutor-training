@@ -1,4 +1,4 @@
-name: Services
+name: ClusterIP Service
 checks:
   - command: kubectl
     args: -n default get deployments -o jsonpath='{.items[?(@.metadata.name=="my-nginx")].status.readyReplicas}'
