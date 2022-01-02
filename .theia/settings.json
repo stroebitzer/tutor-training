@@ -1,5 +1,6 @@
 {
     "editor.minimap.enabled": false,
+    "npm.autoDetect": "off",
     "files.exclude": {
         "**/.git": true,
         "**/.training.yaml": true,
