@@ -13,13 +13,17 @@ topics:
     name: Pods
     slidesUrl: https://docs.google.com/presentation/d/1KXO3jr1zmHCbJOcg6R0N_XXAiLsmwe0D7fW7JJKZ2Rg
     tasks:
-      - name: Pods
+      - name: Your first Pod
         id: pods
-      - name: Pods again
+      - name: Multicontainer Pods
         id: pods_again
   - id: services
     name: Services
     slidesUrl: https://docs.google.com/presentation/d/1UZia1JK_W22GV6hVd5uYuXGfytJJTbCsyHnsaVMj-kw
     tasks:
-      - name: Services
-        id: services
+      - name: ClusterIP
+        id: services_clusterip
+      - name: NodePort
+        id: services_nodeport
+      - name: LoadBalancer
+        id: services_loadbalancer
