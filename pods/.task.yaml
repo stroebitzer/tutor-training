@@ -1,4 +1,4 @@
-name: Pods
+name: My first Pod
 checks:
   - command: kubectl
     args: -n default get deployments -o jsonpath='{.items[?(@.metadata.name=="my-nginx")].status.readyReplicas}'
