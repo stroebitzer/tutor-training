@@ -3,5 +3,5 @@ checks:
   - command: kubectl
     args: -n default get deployments -o jsonpath='{.items[?(@.metadata.name=="my-nginx")].status.readyReplicas}'
     operator: EQUALS
-    expectation: my-nginx
+    expectation: 1
     hint: No Pods of Deployment my-nginx are in running state
