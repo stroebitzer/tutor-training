@@ -1,7 +1,0 @@
-name: Pods Again
-checks:
-  - command: kubectl
-    args: -n default get deployments -o jsonpath='{.items[?(@.metadata.name=="my-nginx")].status.readyReplicas}'
-    operator: EQUAL
-    expectation: something
-    hint: FAKE
