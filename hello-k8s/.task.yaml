@@ -15,224 +15,126 @@ checks:
     expectation: my-service
     hint: Service my-service does not exist
 
-  - id: pod_running
+  - id: pod_running1
     name: Pod my-pod is running
     command: kubectl
     args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
     operator: EQUAL
     expectation: "true"
     hint: Pod my-pod is not in state running
-  - id: service_exists
+  - id: service_exists1
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
     operator: EQUAL
     expectation: my-service
     hint: Service my-service does not exist
-  - id: pod_running
+  - id: pod_running2
     name: Pod my-pod is running
     command: kubectl
     args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
     operator: EQUAL
     expectation: "true"
     hint: Pod my-pod is not in state running
-  - id: service_exists
+  - id: service_exists2
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
     operator: EQUAL
     expectation: my-service
     hint: Service my-service does not exist
-  - id: pod_running
+  - id: pod_running3
     name: Pod my-pod is running
     command: kubectl
     args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
     operator: EQUAL
     expectation: "true"
     hint: Pod my-pod is not in state running
-  - id: service_exists
+  - id: service_exists3
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
     operator: EQUAL
     expectation: my-service
     hint: Service my-service does not exist
-  - id: pod_running
+  - id: pod_running4
     name: Pod my-pod is running
     command: kubectl
     args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
     operator: EQUAL
     expectation: "true"
     hint: Pod my-pod is not in state running
-  - id: service_exists
+  - id: service_exists4
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
     operator: EQUAL
     expectation: my-service
     hint: Service my-service does not exist
-  - id: pod_running
+  - id: pod_running5
     name: Pod my-pod is running
     command: kubectl
     args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
     operator: EQUAL
     expectation: "true"
     hint: Pod my-pod is not in state running
-  - id: service_exists
+  - id: service_exists5
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
     operator: EQUAL
     expectation: my-service
     hint: Service my-service does not exist
-  - id: pod_running
+  - id: pod_running6
     name: Pod my-pod is running
     command: kubectl
     args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
     operator: EQUAL
     expectation: "true"
     hint: Pod my-pod is not in state running
-  - id: service_exists
+  - id: service_exists6
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
     operator: EQUAL
     expectation: my-service
     hint: Service my-service does not exist
-  - id: pod_running
+  - id: pod_running7
     name: Pod my-pod is running
     command: kubectl
     args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
     operator: EQUAL
     expectation: "true"
     hint: Pod my-pod is not in state running
-  - id: service_exists
+  - id: service_exists7
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
     operator: EQUAL
     expectation: my-service
     hint: Service my-service does not exist
-  - id: pod_running
+  - id: pod_running8
     name: Pod my-pod is running
     command: kubectl
     args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
     operator: EQUAL
     expectation: "true"
     hint: Pod my-pod is not in state running
-  - id: service_exists
+  - id: service_exists8
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
     operator: EQUAL
     expectation: my-service
     hint: Service my-service does not exist
-  - id: pod_running
+  - id: pod_running9
     name: Pod my-pod is running
     command: kubectl
     args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
     operator: EQUAL
     expectation: "true"
     hint: Pod my-pod is not in state running
-  - id: service_exists
-    name: Service my-service exists
-    command: kubectl
-    args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
-    operator: EQUAL
-    expectation: my-service
-    hint: Service my-service does not exist
-  - id: pod_running
-    name: Pod my-pod is running
-    command: kubectl
-    args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
-    operator: EQUAL
-    expectation: "true"
-    hint: Pod my-pod is not in state running
-  - id: service_exists
-    name: Service my-service exists
-    command: kubectl
-    args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
-    operator: EQUAL
-    expectation: my-service
-    hint: Service my-service does not exist
-  - id: pod_running
-    name: Pod my-pod is running
-    command: kubectl
-    args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
-    operator: EQUAL
-    expectation: "true"
-    hint: Pod my-pod is not in state running
-  - id: service_exists
-    name: Service my-service exists
-    command: kubectl
-    args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
-    operator: EQUAL
-    expectation: my-service
-    hint: Service my-service does not exist
-  - id: pod_running
-    name: Pod my-pod is running
-    command: kubectl
-    args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
-    operator: EQUAL
-    expectation: "true"
-    hint: Pod my-pod is not in state running
-  - id: service_exists
-    name: Service my-service exists
-    command: kubectl
-    args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
-    operator: EQUAL
-    expectation: my-service
-    hint: Service my-service does not exist
-  - id: pod_running
-    name: Pod my-pod is running
-    command: kubectl
-    args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
-    operator: EQUAL
-    expectation: "true"
-    hint: Pod my-pod is not in state running
-  - id: service_exists
-    name: Service my-service exists
-    command: kubectl
-    args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
-    operator: EQUAL
-    expectation: my-service
-    hint: Service my-service does not exist
-  - id: pod_running
-    name: Pod my-pod is running
-    command: kubectl
-    args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
-    operator: EQUAL
-    expectation: "true"
-    hint: Pod my-pod is not in state running
-  - id: service_exists
-    name: Service my-service exists
-    command: kubectl
-    args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
-    operator: EQUAL
-    expectation: my-service
-    hint: Service my-service does not exist
-  - id: pod_running
-    name: Pod my-pod is running
-    command: kubectl
-    args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
-    operator: EQUAL
-    expectation: "true"
-    hint: Pod my-pod is not in state running
-  - id: service_exists
-    name: Service my-service exists
-    command: kubectl
-    args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
-    operator: EQUAL
-    expectation: my-service
-    hint: Service my-service does not exist
-  - id: pod_running
-    name: Pod my-pod is running
-    command: kubectl
-    args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
-    operator: EQUAL
-    expectation: "true"
-    hint: Pod my-pod is not in state running
-  - id: service_exists
+  - id: service_exists9
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
