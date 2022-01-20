@@ -10,7 +10,8 @@ topics:
       - directory: hello-k8s
   - id: pods
     name: Pods
-    slidesUrl: https://docs.google.com/presentation/d/1KXO3jr1zmHCbJOcg6R0N_XXAiLsmwe0D7fW7JJKZ2Rg
+    # slidesUrl: https://docs.google.com/presentation/d/1KXO3jr1zmHCbJOcg6R0N_XXAiLsmwe0D7fW7JJKZ2Rg
+    videoUrl: https://share.synthesia.io/embeds/videos/918942e0-db26-4b22-aa8e-0079aff72c5a
     tasks:
       - directory: pods
   - id: services
