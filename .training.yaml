@@ -5,19 +5,21 @@ topics:
     slidesUrl: https://docs.google.com/presentation/d/1gxNSsHacD42O-zPciMwZYc9PFRjrjMUMUmr4y13WRyM
   - id: k8s-architecture
     name: Kubernetes Architecture
-    slidesUrl: https://docs.google.com/presentation/d/1a1ie8oazKuVjOpGjxDeA-1XFrEEuKU9ZwS5Gerlbv2g
+    # slidesUrl: https://docs.google.com/presentation/d/1a1ie8oazKuVjOpGjxDeA-1XFrEEuKU9ZwS5Gerlbv2g
+    videoUrl: https://www.youtube.com/embed/sbjsaI6QAHM
     tasks:
       - directory: hello-k8s
   - id: pods
     name: Pods
     # slidesUrl: https://docs.google.com/presentation/d/1KXO3jr1zmHCbJOcg6R0N_XXAiLsmwe0D7fW7JJKZ2Rg
     # videoUrl: https://share.synthesia.io/embeds/videos/918942e0-db26-4b22-aa8e-0079aff72c5a
-    videoUrl: https://www.youtube.com/embed/sbjsaI6QAHM
+    videoUrl: https://www.youtube.com/embed/YN4bKsHfP24
     tasks:
       - directory: pods
   - id: services
     name: Services
-    slidesUrl: https://docs.google.com/presentation/d/1UZia1JK_W22GV6hVd5uYuXGfytJJTbCsyHnsaVMj-kw
+    # slidesUrl: https://docs.google.com/presentation/d/1UZia1JK_W22GV6hVd5uYuXGfytJJTbCsyHnsaVMj-kw
+    videoUrl: https://www.youtube.com/embed/N_3L60sjG6k
     tasks:
       - directory: services_clusterip
       - directory: services_nodeport
