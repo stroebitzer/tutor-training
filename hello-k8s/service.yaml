@@ -4,7 +4,6 @@ metadata:
   namespace: default
   name: my-service
 spec:
-  type: LoadBalancer
   selector:
     app: my-pod
   ports:

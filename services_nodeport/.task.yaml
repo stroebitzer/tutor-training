@@ -1,9 +1,16 @@
 name: NodePort Service
 checks:
-  - id: fake
-    name: FAKE
+  - id: pod_running
+    name: Pod my-pod is running
     command: kubectl
-    args: -n default get deployments -o jsonpath='{.items[?(@.metadata.name=="my-nginx")].status.readyReplicas}'
+    args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
     operator: EQUAL
-    expectation: something
-    hint: FAKE
+    expectation: "true"
+    hint: Pod my-pod is not in state running
+  - id: service_exists
+    name: Service my-service exists
+    command: kubectl
+    args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
+    operator: EQUAL
+    expectation: my-service
+    hint: Service my-service does not exist
