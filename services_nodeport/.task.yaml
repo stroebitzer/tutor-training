@@ -3,10 +3,10 @@ checks:
   - id: pod_running
     name: Pod my-pod is running
     command: kubectl
-    args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}' 
+    args: kubectl -n default get deployment my-deployment -o jsonpath='{.status.readyReplicas}'
     operator: EQUAL
-    expectation: "true"
-    hint: Pod my-pod is not in state running
+    expectation: 1
+    hint: The Deployment has to have at least one running pod
   - id: service_exists
     name: Service my-service exists
     command: kubectl
@@ -14,3 +14,10 @@ checks:
     operator: EQUAL
     expectation: my-service
     hint: Service my-service does not exist
+  - id: service_type_is_nodeport
+    name: Service my-service is of type NodePort
+    command: kubectl
+    args: -n default get svc my-service -o jsonpath='{.spec.type}'
+    operator: EQUAL
+    expectation: NodePort
+    hint: Ensure that the service is of type NodePort
