@@ -1,4 +1,4 @@
-name: NodePort Service
+name: ClusterIP Service
 checks:
   - id: pod_running
     name: Pod my-pod is running
@@ -10,14 +10,14 @@ checks:
   - id: service_exists
     name: Service my-service exists
     command: kubectl
-    args: -n default get svc my-service -o jsonpath='{.metadata.name}' 
+    args: -n default get svc my-service -o jsonpath='{.metadata.name}'
     operator: EQUAL
     expectation: my-service
     hint: Service my-service does not exist
-  - id: service_type_is_nodeport
-    name: Service my-service is of type NodePort
+  - id: service_type_is_clusterip
+    name: Service my-service is of type ClusterIp
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.spec.type}'
     operator: EQUAL
-    expectation: NodePort
-    hint: Ensure that the service is of type NodePort
+    expectation: ClusterIP
+    hint: Ensure that the service is of type ClusterIP

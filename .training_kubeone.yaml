@@ -1,0 +1,6 @@
+name: KubeOne
+topics:
+  - id: fake
+    name: Fake
+    tasks:
+      - directory: fake

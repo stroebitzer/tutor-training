@@ -1,0 +1,6 @@
+name: Loki
+topics:
+  - id: fake
+    name: Fake
+    tasks:
+      - directory: fake

@@ -1,0 +1,6 @@
+name: Istio
+topics:
+  - id: fake
+    name: Fake
+    tasks:
+      - directory: fake
