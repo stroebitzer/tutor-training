@@ -4,3 +4,4 @@ topics:
     name: Fake
     tasks:
       - directory: fake
+      - directory: fake2
