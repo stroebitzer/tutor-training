@@ -1,0 +1,16 @@
+name: Hello Docker
+checks:
+  - id: container_running
+    name: The Container is running
+    command: docker
+    args: inspect --format="{{.State.Status}}" my-nginx
+    operator: CONTAINS
+    expectation: running
+    hint: The Container 'my-nginx' is not in running state.
+  - id: webserver_responds
+    name: The WebServer sends a proper response
+    command: curl
+    args: -I localhost:9000 
+    operator: CONTAINS
+    expectation: HTTP/1.1 200 OK
+    hint: The WebServer does not send a successful response on port 9000.

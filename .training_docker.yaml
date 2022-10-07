@@ -1,7 +1,23 @@
-name: Docker
+name: Docker Fundamentals
 topics:
-  - id: fake
-    name: Fake
+  - id: intro
+    name: Intro
+    slidesUrl: https://docs.google.com/presentation/d/1l-c8ad2x4_kpPVhjsgI6_RLHkb_ssT5KyPSyi-PHS3U
+  - id: getting_started
+    name: Getting Started
+    slidesUrl: https://docs.google.com/presentation/d/1o8WQe0R2WcQx5M7xR0mKZPOr0luGscTvkp0VspcA-MA
+  - id: basics
+    name: Basics
+    slidesUrl: https://docs.google.com/presentation/d/1yxfuWySnSCKM6UPKneOHD-mK0n6Sm_q_es5Rmd_3SzU
     tasks:
-      - directory: fake
-      - directory: fake2
+      - directory: docker_hello_docker
+  - id: container_lifecycle
+    name: Container Lifecycle
+    slidesUrl: https://docs.google.com/presentation/d/1FUlzpaKUfQvJKeghDkJNx4YxQTqaBJ7h1gqYLCTYm2U
+    tasks:
+      - directory: docker_container_lifecycle
+  - id: container_interaction
+    name: Container Interaction
+    slidesUrl: https://docs.google.com/presentation/d/1hoFBliN96GE740VSJy0qf3sZXKvIsHoFVv96wrv1gog
+    tasks:
+      - directory: docker_container_interaction

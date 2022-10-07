@@ -1,16 +1,16 @@
-name: Fake
+name: Container Interaction
 checks:
   - id: check_directory
     name: Check Directory
     command: pwd
     args: 
-    operator: EQUAL
+    operator: EQUALS
     expectation: ./training/fake
     hint: You should be in the ./training/fake directory
   - id: check_contents_of_directory
     name: Check contents of Directory
     command: ls
     args: 
-    operator: EQUAL
+    operator: EQUALS
     expectation: 
     hint: No files should be in the ./training/fake directory
