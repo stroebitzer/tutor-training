@@ -6,11 +6,13 @@ checks:
     args: -n default get pod my-pod -o jsonpath='{.status.containerStatuses[0].ready}'
     operator: EQUALS
     expectation: "true"
-    hint: Pod my-pod is not in state running
+    successText: Pod my-pod is in state running
+    failureText: Pod my-pod is not in state running
   - id: service_exists
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}'
     operator: EQUALS
     expectation: my-service
-    hint: Service my-service does not exist
+    successText: Service my-service exists
+    failureText: Service my-service does not exist

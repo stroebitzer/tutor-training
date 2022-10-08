@@ -6,18 +6,21 @@ checks:
     args: -n default get deployment my-deployment -o jsonpath='{.status.readyReplicas}'
     operator: EQUALS
     expectation: 1
-    hint: The Deployment has to have at least one running pod
+    successText: The Deployment has at least one running pod
+    failureText: The Deployment has to have at least one running pod
   - id: service_exists
     name: Service my-service exists
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.metadata.name}'
     operator: EQUALS
     expectation: my-service
-    hint: Service my-service does not exist
+    successText: Service my-service exists
+    failureText: Service my-service does not exist
   - id: service_type_is_clusterip
     name: Service my-service is of type ClusterIp
     command: kubectl
     args: -n default get svc my-service -o jsonpath='{.spec.type}'
     operator: EQUALS
     expectation: ClusterIP
-    hint: Ensure that the service is of type ClusterIP
+    successText: The service is of type ClusterIP
+    failureText: Ensure that the service is of type ClusterIP
