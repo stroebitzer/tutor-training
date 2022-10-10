@@ -1,0 +1,13 @@
+name: The most important question
+question:
+  type: SINGLE_CHOICE
+  options:
+    - "42"
+    - "17"
+    - "98"
+    - "456"
+    - "852"
+    - "8"
+  rightAnswer: 42
+  successText: Yes 42 is the right answer
+  failureText: Nope that is not the right answer

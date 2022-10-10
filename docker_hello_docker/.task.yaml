@@ -11,7 +11,7 @@ checks:
   - id: webserver_responds
     name: The WebServer sends a proper response
     command: curl
-    args: -I localhost:9000 
+    args: -I localhost:9000
     operator: CONTAINS
     expectation: HTTP/1.1 200 OK
     successText: The WebServer sends a successful response on port 9000.

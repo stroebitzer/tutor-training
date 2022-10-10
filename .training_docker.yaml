@@ -21,3 +21,5 @@ topics:
     slidesUrl: https://docs.google.com/presentation/d/1hoFBliN96GE740VSJy0qf3sZXKvIsHoFVv96wrv1gog
     tasks:
       - directory: docker_container_interaction
+      - directory: docker_question
+      # - directory: docker_multiple_choice_question

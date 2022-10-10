@@ -1,0 +1,13 @@
+name: The most important multiple choice question
+question:
+  type: MULTIPLE_CHOICE
+  options:
+    - "42"
+    - "17"
+    - "98"
+    - "456"
+    - "852"
+    - "8"
+  rightAnswer: 42, 852
+  successText: Yes 42, 852 is the right answer
+  failureText: Nope that is not the right answer
