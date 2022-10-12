@@ -1,0 +1,16 @@
+name: Kubernetes Security
+topics:
+  - id: intro
+    name: Intro
+    slidesUrl: https://docs.google.com/presentation/d/1gxNSsHacD42O-zPciMwZYc9PFRjrjMUMUmr4y13WRyM
+  - id: k8s-architecture
+    name: Kubernetes Architecture
+    videoUrl: https://www.youtube.com/embed/sbjsaI6QAHM
+    tasks:
+      - directory: kubernetes_hello_k8s
+  - id: services
+    name: Services
+    videoUrl: https://www.youtube.com/embed/N_3L60sjG6k
+    tasks:
+      - directory: kubernetes_services_clusterip
+      - directory: kubernetes_services_nodeport
