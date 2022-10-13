@@ -1,18 +1,10 @@
 name: Container Lifecycle
 checks:
-  - id: check_directory
-    name: Check Directory
-    command: pwd
-    args: 
-    operator: EQUALS
-    expectation: ./training/fake
-    successText: You are in the ./training/fake directory
-    failureText: You should be in the ./training/fake directory
-  - id: check_contents_of_directory
-    name: Check contents of Directory
-    command: ls
-    args: 
-    operator: EQUALS
-    expectation: 
-    successText: No files are in the ./training/fake directory
-    failureText: No files should be in the ./training/fake directory
+  - id: stop_container
+    name: Stop Container
+    command: docker
+    args: inspect --format="{{.State.Status}}" my-nginx
+    operator: CONTAINS
+    expectation: exited
+    successText: The container with the name my-nginx has exited.
+    failureText: The container with the name my-nginx is not in the state exited.

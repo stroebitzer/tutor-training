@@ -1,18 +1,12 @@
 name: Container Interaction
-checks:
-  - id: check_directory
-    name: Check Directory
-    command: pwd
-    args: 
-    operator: EQUALS
-    expectation: ./training/fake
-    successText: You are in the ./training/fake directory
-    failureText: You should be in the ./training/fake directory
-  - id: check_contents_of_directory
-    name: Check contents of Directory
-    command: ls
-    args: 
-    operator: EQUALS
-    expectation: 
-    successText: No files are in the ./training/fake directory
-    failureText: No files should be in the ./training/fake directory
+question:
+  type: SINGLE_CHOICE
+  options:
+    - "1"
+    - "5"
+    - "3"
+    - "4"
+    - "2"
+  rightAnswer: 2
+  successText: Exactly, 2 containers are running currently.
+  failureText: No, that is not the number of running containers.
